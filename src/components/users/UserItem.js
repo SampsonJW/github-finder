@@ -7,12 +7,12 @@ const UserItem = ({ user: { login, avatar_url, html_url } }) => {
       <img
         src={avatar_url}
         alt=''
-        className='round-img'
-        style={{ width: '60px' }}
+        className='rounded-circle mx-auto my-3'
+        style={{ width: '90px' }}
       />
       <h3>{login}</h3>
       <div>
-        <a href={html_url} className='btn btn-dark btn-sm my-1'>
+        <a href={html_url} className='btn btn-dark btn-sm my-3'>
           More
         </a>
       </div>
