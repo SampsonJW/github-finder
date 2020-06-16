@@ -1,13 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const Navbar = ({ title, icon }) => {
   return (
-    <nav className='navbar navbar-dark' style={{ backgroundColor: '#49635A' }}>
-      <h1>
-        <i className={icon} />
-        {title}
-      </h1>
+    <nav
+      className='navbar navbar-expand-sm navbar-dark'
+      style={{ backgroundColor: '#49635A' }}
+    >
+      <Link to='/' className='navbar-brand'>
+        <h1>
+          <i className={icon} />
+          {title}
+        </h1>
+      </Link>
+
+      <div class='navbar-nav'>
+        <Link to='/' className='nav-item nav-link mr-auto'>
+          Home
+        </Link>
+        <Link to='/About' className='nav-item nav-link'>
+          About
+        </Link>
+      </div>
     </nav>
   );
 };
