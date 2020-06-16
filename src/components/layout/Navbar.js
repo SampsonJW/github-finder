@@ -15,7 +15,7 @@ const Navbar = ({ title, icon }) => {
         </h1>
       </Link>
 
-      <div class='navbar-nav'>
+      <div className='navbar-nav'>
         <Link to='/' className='nav-item nav-link mr-auto'>
           Home
         </Link>
